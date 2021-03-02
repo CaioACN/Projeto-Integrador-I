@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Projeto Integrador
+          Projeto Integrador I
         </a>
       </header>
     </div>
