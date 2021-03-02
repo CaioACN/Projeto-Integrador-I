@@ -15,9 +15,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Projeto Integrador I
+          Projeto Integrador 1
 
-          OI sou eu :)))
         </a>
       </header>
     </div>
