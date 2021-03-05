@@ -17,7 +17,7 @@ function App() {
         >
           Projeto Integrador I
 
-          OI sou eu :))) houve um momento !!!
+          Teste Vinícius
         </a>
       </header>
     </div>
