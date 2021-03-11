@@ -15,7 +15,7 @@ const Login = () => {
             <div className="login-rigth">
                 <h1> Login </h1>
 
-                <div className="loginInputEmail">
+                <div className="login-loginInputEmail">
                    <MdEmail />
                     <input
                         type="text"
@@ -23,7 +23,7 @@ const Login = () => {
                     />
                 </div>
 
-                <div className="loginInputSenha">
+                <div className="login-loginInputSenha">
                    <MdLock />
                     <input
                         type="text"
