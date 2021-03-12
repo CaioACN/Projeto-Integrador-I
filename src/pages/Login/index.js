@@ -5,22 +5,24 @@ import { MdEmail, MdLock } from "react-icons/md";
 
 const Login = () => {
     return (
-        
+
         <div className="login">
-            
+
             <div className="login-logo">
-            
-                <img 
-                    src="https://anzuns.org/wp-content/uploads/2018/02/admin_login.png"
+
+                <img
+                    src="logo.png"
                     alt="Controle de Publicações" />
             </div>
 
             <div className="login-rigth">
-            
+
                 <h1> Login </h1>
 
+
+
                 <div className="login-loginInputEmail">
-                   <MdEmail />
+                    <MdEmail />
                     <input
                         type="email"
                         placeholder="E-mail: "
@@ -28,7 +30,7 @@ const Login = () => {
                 </div>
 
                 <div className="login-loginInputSenha">
-                   <MdLock />
+                    <MdLock />
                     <input
                         type="password"
                         placeholder="Senha: "
