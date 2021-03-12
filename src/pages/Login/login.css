@@ -5,17 +5,20 @@
     height: 100vh;
     width: 100%;
 
-    background-color: #000000;
+    background-color: #ffffff;
     color: white;
 }
 
 .login-logo img { 
-    width: 120px;
-    height: 120px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 550px;
+    height: 440px;
 }
 
 .login-rigth {
-    background-color: hsl(76, 13%, 62%);
+    background-color: #ef8183;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -23,8 +26,10 @@
     align-items: center;
     margin-left: 50px;
     padding: 20px;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 400px;
+    
+  
 
 }
 
