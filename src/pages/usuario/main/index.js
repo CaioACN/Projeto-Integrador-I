@@ -1,5 +1,5 @@
 import React, {component} from 'react';
-import { link } from 'react-router-dom';
+
 import './index.css';
 
 export class Main extends Component {
