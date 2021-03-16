@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { link } from 'react-router-dom';
+import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 export default class Usuario extends Component {
@@ -7,10 +7,10 @@ export default class Usuario extends Component {
         usuario: {}
     };
 
-    componentDidMount() {
-        const { id } = this.props.match.params;
+    componentDidMount(){
+        const {id} = this.props.match.params;
 
-        fetch('endereçoBackends/${id}')
+        fetch('http:localhost:3003/sistema/usuario/${id}')
             .then(usuario =>
                 usuario.json().then(usuario => this.setState({ usuario }))
             )
