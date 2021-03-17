@@ -33,10 +33,10 @@ export default class Usuario extends Component {
                     <h1>{usuario.dataNascimento}</h1>
                    <br />
                  
-              *//<Link to={'./usuarios'}>Voltar</Link> <br />
-               *//  <Link to={'./editarusuarios/${usuario.id}'}>Editar</Link><br />
-               *//  <Link to={'./deletarusuarios/${usuario.id}'}>Deletar</Link><br />
-               </div>
+             <Link to={'/usuarios'}>Voltar</Link> <br />
+            <Link to={'/editarusuarios/${usuario.id}'}>Editar</Link><br />
+            <Link to={'/deletarusuarios/${usuario.id}'}>Deletar</Link><br />
+             </div>
        )
     
        }

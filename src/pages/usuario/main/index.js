@@ -1,5 +1,5 @@
 import React, {component} from 'react';
-
+import { Link } from 'react-router-dom';
 import './index.css';
 
 export class Main extends Component {
@@ -10,13 +10,13 @@ export class Main extends Component {
         }
     }
     componentDidMount(){
-        fetch('endereçobackend')
+        fetch('http://localhost:3003/sistema/usuarios')
         .then(usuario =>
             usuario.json().then(usuario => this.setState({usuario}))
             )
     }
     render() {
-        const {usuário} = this.state;
+        const {usuario} = this.state;
 
         return usuario.map((usuario,index) => (
             <div className="usuario-list">
@@ -24,7 +24,7 @@ export class Main extends Component {
                     <h5>{usuario.nome}</h5>
                     <article>
                     <strong>{usuario.salario}</strong>
-                    <p><link to={'/usuarios/${usuario.id}'}>Detalhes</link></p>
+                    <p><Link to={'/usuarios/${usuario.id}'}>Detalhes</Link></p>
                     <br/>
                     </article>
                     </div>

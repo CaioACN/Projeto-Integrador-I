@@ -1,5 +1,5 @@
-import React from 'react'
-import './login.css'
+import React from 'react';
+import './login.css';
 
 import { MdEmail, MdLock } from "react-icons/md";
 
