@@ -1,8 +1,8 @@
-import React, {component} from 'react';
+import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './index.css';
 
-export class Main extends Component {
+export class MainUsuario extends Component {
     constructor(props){
         super(props);
         this.state = {

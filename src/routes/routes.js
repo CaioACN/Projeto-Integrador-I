@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router('../pages/usuario/main');
+const router = express.Router('../pages/usua');
 const UsuarioController = require('../controllers/usuarioController');
 const { default: Usuario } = require('../pages/usuario/detalhes');
 
