@@ -31,10 +31,7 @@ sequelize.sync({force:false}).then ( () => {
   server.listen(port);
 });
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'));
+ReactDOM.render(<React.StrictMode> <App />
+</React.StrictMode>,document.getElementById('root'));
 
   serviceWorker.unregister();
