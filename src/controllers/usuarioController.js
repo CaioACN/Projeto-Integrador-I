@@ -23,6 +23,17 @@ exports.Insert = (req, res, next) => {
         .catch(error => next(error));
 }
 
+exports.SearchA11 = (req,res,next) => {
+    Usuario.findAll()
+    .then(usuario => {
+        if(usuario){
+            res.status(status.Ok).send(usuario);
+        }
+    })
+    .catch(error => next(error));
+
+}
+
 exports.Update = (req, res, next) => {
     const id = req.params.id;
     const nome = req.body.id;
@@ -51,4 +62,24 @@ exports.Update = (req, res, next) => {
             }
         })
         .catch(error => next(error));
+}
+
+exports.Delete = (req, res, next) => {
+    const id = req.params.id;
+
+    Usuario.findByPK(id)
+        .then(usuario => {
+            if (usuario) {
+                usuario.destroy({
+                    where: { id: id }
+                })
+                .then( () => {
+                    res.status(status.ok).send();   
+                })
+                .catch(error => next(error));
+            }else{
+                res.status(status.NOT_FOUND).send();
+            }
+    })
+    .catch(error => next(error));
 }
