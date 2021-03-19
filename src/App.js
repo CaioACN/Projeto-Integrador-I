@@ -3,7 +3,9 @@ import './App.css';
 import Header from './components/header/header';
 import Routes from './routes';
 import Login from '../src/pages/Login' ;
-import Usuario from '../src/pages/usuario';
+import Usuario from './pages/usuario/deletar';
+
+
 
 
 function App() {

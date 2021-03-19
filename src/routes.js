@@ -6,7 +6,8 @@ import MainUsuario from './pages/usuario/main';
 import DetalhesUsuario from './pages/usuario/detalhes';
 import CriarUsuario from './pages/usuario/criar';
 import EditarUsuario from './pages/usuario/editar';
-import Header from './components/header/header';
+import DeletarUsuario from './pages/usuario/deletar';
+
 
 
 const Routes = () => (
@@ -16,7 +17,8 @@ const Routes = () => (
         <Route path = "/usuarios/:id" component={DetalhesUsuario}/>
         <Route path = "/criarUsuario/" component={CriarUsuario}/>
         <Route path = "/editarUsuario/"component={EditarUsuario}/>
-        <Route path = "/header/:id" component={Header}/>
+        <Routes path = "/deletarUsuario/"component={DeletarUsuario}/>
+        
         
     
 
