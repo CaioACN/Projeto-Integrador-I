@@ -15,8 +15,8 @@ const Routes = () => (
         <Route exact path = "/usuarios" component={MainUsuario}/>
         <Route path = "/usuarios/:id" component={DetalhesUsuario}/>
         <Route path = "/criarUsuario/" component={CriarUsuario}/>
-        <Route path = '/editarUsuario/'component={EditarUsuario}/>
-        <Route path = '/header/' component={Header}/>
+        <Route path = "/editarUsuario/"component={EditarUsuario}/>
+        <Route path = "/header/:id" component={Header}/>
         
     
 
