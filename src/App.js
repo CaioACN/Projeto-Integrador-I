@@ -2,8 +2,8 @@ import React from 'react'
 import './App.css';
 import Header from './components/header/header';
 import Routes from './routes';
-import Login from '../src/pages/Login' ;
-import Usuario from '../src/pages/usuario';
+import Login from './src/pages/Login' ;
+import Usuario from './src/pages/usuario';
 
 
 function App() {
