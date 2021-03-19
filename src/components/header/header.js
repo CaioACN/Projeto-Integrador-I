@@ -1,9 +1,9 @@
 import React from 'react';
-import './header.css'
+import './header.css';
 
 
 const Header = () => (
-    <header id="main-header"> Sistema </header>
+    <header id="main-header">Sistema</header>
 );
 
 export default Header;

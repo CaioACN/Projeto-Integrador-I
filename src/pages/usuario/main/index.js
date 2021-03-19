@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './index.css';
 
-export class MainUsuario extends Component {
+export default class MainUsuario extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -32,3 +32,4 @@ export class MainUsuario extends Component {
         ))
     }
 }
+
