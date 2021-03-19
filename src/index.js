@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
+
 const http = require('http');
 const express = require('express');
 const status = require('http-status');
@@ -34,5 +35,8 @@ sequelize.sync({force:false}).then ( () => {
 
 ReactDOM.render(<React.StrictMode> <App />
 </React.StrictMode>,document.getElementById('root'));
+
+
+
 
   serviceWorker.unregister();
