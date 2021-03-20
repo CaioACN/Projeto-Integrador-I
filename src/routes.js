@@ -4,7 +4,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import MainUsuario from './pages/usuario/main';
 import DetalhesUsuario from './pages/usuario/detalhes';
-import * as CriarUsuario from './pages/usuario/criar';
+import CriarUsuario from './pages/usuario/criar';
 import EditarUsuario from './pages/usuario/editar';
 import DeletarUsuario from './pages/usuario/deletar';
 
