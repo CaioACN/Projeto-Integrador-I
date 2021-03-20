@@ -10,8 +10,8 @@ export default class Usuario extends Component {
     componentDidMount(){
         const {id} = this.props.match.params;
 
-        fetch('http:localhost:3003/sistema/usuario/${id}')
-            .then(usuario =>
+        fetch(`http:localhost:3003/sistema/usuario/${id}`)
+            .then(usuario => 
                 usuario.json().then(usuario => this.setState({ usuario }))
             )
     }
@@ -41,5 +41,4 @@ export default class Usuario extends Component {
     
        }
     
-}
-
+    }

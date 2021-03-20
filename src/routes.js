@@ -4,7 +4,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import MainUsuario from './pages/usuario/main';
 import DetalhesUsuario from './pages/usuario/detalhes';
-import CriarUsuario from './pages/usuario/criar';
+import * as CriarUsuario from './pages/usuario/criar';
 import EditarUsuario from './pages/usuario/editar';
 import DeletarUsuario from './pages/usuario/deletar';
 
@@ -16,8 +16,8 @@ const Routes = () => (
         <Route exact path = "/usuarios" component={MainUsuario}/>
         <Route path = "/usuarios/:id" component={DetalhesUsuario}/>
         <Route path = "/criarUsuario/" component={CriarUsuario}/>
-        <Route path = "/editarUsuario/"component={EditarUsuario}/>
-        <Routes path = "/deletarUsuario/"component={DeletarUsuario}/>
+        <Route path = "/editarUsuario/:id"component={EditarUsuario}/>
+        <Routes path = "/deletarUsuario/:id"component={DeletarUsuario}/>
         
         
     

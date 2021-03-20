@@ -1,3 +1,5 @@
+
+
 module.exports = {
     development: {
         database: {
@@ -13,8 +15,8 @@ module.exports = {
     production: {
         database: {
             host: process.env.DB_HOST,
-            host: process.env.DB_PORT
-        }
+            host: process.env.DB_PORT       }
     }
 
 }
+export default Config;

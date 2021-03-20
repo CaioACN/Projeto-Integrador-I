@@ -3,15 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { config } from 'process';
 
 
 
 const http = require('http');
 const express = require('express');
 const status = require('http-status');
-const sequelize = require('./src/database/database');
+const sequelize = require('./database/database');
 const app = express();
-const routes = require('./src/routes/routes');
+const routes = require('./routes/routes');
 
 
 app.use(express.jason());
@@ -40,3 +41,4 @@ ReactDOM.render(<React.StrictMode> <App />
 
 
   serviceWorker.unregister();
+
