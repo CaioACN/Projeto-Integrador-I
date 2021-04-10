@@ -15,6 +15,14 @@ namespace cdp_app.Controllers
         {
             return "Caio";
         }
+
+        [Route("[action]")]
+        [HttpGet]
+        public String ExemplodeDesubrota()
+        {
+            return "Caio2";
+        }
+
         [HttpPost]
         public String CadastrarUsuario(Usuario usuario)
         {

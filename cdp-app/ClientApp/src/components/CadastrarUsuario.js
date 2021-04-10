@@ -17,10 +17,26 @@ export class CadastrarUsuario extends Component {
          this.setState({ [id]: valor });
     }
 
-    salvarNovoUsuario = (event) => {
+    salvarNovoUsuario = async (event) => {
         event.preventDefault();
         //chamar rest para cadastrar usuário
-        alert(JSON.stringify(this.state));
+        let postData = JSON.stringify(this.state);
+       
+
+        try {
+            let response = await fetch('usuario', {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: postData
+            });
+            let mensagem = await response.json();
+            alert(JSON.stringify(mensagem));
+        } catch (error) {
+            console.error(error);
+        }
     }
 
     render() {

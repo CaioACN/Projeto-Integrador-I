@@ -1,55 +1,66 @@
-//import React from 'react';
 import React, { Component } from 'react';
 
 import './Login.css';
 
 import { MdEmail, MdLock } from "react-icons/md";
 
-const Login = () => {
-    return (
 
-        <div className="login">
-
-            <div className="login-logo">
-
-                <img
-                    src="logo.png"
-                    alt="Controle de Publicações" />
-            </div>
-
-            <div className="login-rigth">
-
-                <h1> Login </h1>
+export class Login extends Component {
 
 
+    static displayName = Login.name;
 
-                <div className="login-loginInputEmail">
-                    <MdEmail />
-                    <input
-                        type="email"
-                        placeholder="E-mail: "
-                    />
+
+    constructor(props) {
+        super(props);
+
+    }
+
+    render() {
+        return (
+
+            <div className="login">
+
+                <div className="login-logo">
+
+                    <img
+                        src="logo.png"
+                        alt="Controle de Publicações" />
                 </div>
 
-                <div className="login-loginInputSenha">
-                    <MdLock />
-                    <input
-                        type="password"
-                        placeholder="Senha: "
-                    />
-                </div>
+                <div className="login-rigth">
 
-                <button type="submit">
-                    Entrar
+                    <h1> Login </h1>
+
+
+
+                    <div className="login-loginInputEmail">
+                        <MdEmail />
+                        <input
+                            type="email"
+                            placeholder="E-mail: "
+                        />
+                    </div>
+
+                    <div className="login-loginInputSenha">
+                        <MdLock />
+                        <input
+                            type="password"
+                            placeholder="Senha: "
+                        />
+                    </div>
+
+                    <button type="submit">
+                        Entrar
                 </button>
 
-                <h4>Novo usuário</h4>
-                <a href="/cadastrarusuario">
-                    Cadastrar
+                    <h4>Novo usuário</h4>
+                    <a href="/cadastrarusuario">
+                        Cadastrar
                 </a>
 
+                </div>
             </div>
-        </div>
-    )
+        );
+    }
 }
-export default Login;
