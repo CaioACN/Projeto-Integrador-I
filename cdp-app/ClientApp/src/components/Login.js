@@ -44,9 +44,9 @@ const Login = () => {
                 </button>
 
                 <h4>Novo usuário</h4>
-                <button type="submit">
+                <a href="/cadastrarusuario">
                     Cadastrar
-                </button>
+                </a>
 
             </div>
         </div>
