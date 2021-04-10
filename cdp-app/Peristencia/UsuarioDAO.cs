@@ -7,5 +7,6 @@ namespace cdp_app.Peristencia
 {
     public class UsuarioDAO
     {
+
     }
 }

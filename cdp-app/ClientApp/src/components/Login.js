@@ -1,4 +1,6 @@
-import React from 'react';
+//import React from 'react';
+import React, { Component } from 'react';
+
 import './Login.css';
 
 import { MdEmail, MdLock } from "react-icons/md";
