@@ -1,4 +1,5 @@
 ﻿using cdp_app.Model;
+using cdp_app.Negocio;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -10,6 +11,13 @@ namespace cdp_app.Controllers
     public class UsuarioController : ControllerBase
     
     {
+        private UsuarioService usuarioRegrasDeNegocio;
+
+        public UsuarioController(UsuarioService usuarioService)
+        {
+            this.usuarioRegrasDeNegocio = usuarioService;
+        }
+
         [HttpGet]
         public String RetornarTexto()
         {
@@ -26,11 +34,7 @@ namespace cdp_app.Controllers
         [HttpPost]
         public String CadastrarUsuario(Usuario usuario)
         {
-            Console.WriteLine(usuario.Email);
-            Console.WriteLine(usuario.Nome);
-            Console.WriteLine(usuario.Senha);
-
-            return "Cadastro realizado com sucesso.";
+            return usuarioRegrasDeNegocio.cadastrarNovoUsuario(usuario);
         }
        
        

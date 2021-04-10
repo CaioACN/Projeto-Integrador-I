@@ -1,3 +1,5 @@
+using cdp_app.Negocio;
+using cdp_app.Peristencia;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,10 @@ namespace cdp_app
             {
                 configuration.RootPath = "ClientApp/build";
             });
+            
+            /* Registrando Singleton para Usuario Service*/
+            UsuarioService usuarioService = new UsuarioService();
+            services.AddSingleton(usuarioService);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
