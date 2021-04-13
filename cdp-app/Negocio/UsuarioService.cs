@@ -15,12 +15,12 @@ namespace cdp_app.Negocio
         public UsuarioService()
         {
             usuarioDAO = new UsuarioDAO();
-        }        
+        }
 
         public String cadastrarNovoUsuario(Usuario usuario)
         {
             Usuario resultado = usuarioDAO.buscarPorEmail(usuario.Email);
-            if( resultado == null)
+            if ( resultado == null)
             {
                 usuarioDAO.salvar(usuario);
 

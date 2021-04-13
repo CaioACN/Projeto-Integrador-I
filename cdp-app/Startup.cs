@@ -34,7 +34,7 @@ namespace cdp_app
             });
             
             /* Registrando Singleton para Usuario Service*/
-            UsuarioService usuarioService = new UsuarioService();
+            ClienteService usuarioService = new ClienteService();
             services.AddSingleton(usuarioService);
         }
 

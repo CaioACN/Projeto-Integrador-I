@@ -11,30 +11,30 @@ namespace cdp_app.Controllers
     public class ClienteController : ControllerBase
     
     {
-        private ClienteService usuarioRegrasDeNegocio;
+        private ClienteService clienteRegrasDeNegocio;
 
-        public ClienteController(ClienteService usuarioService)
+        public ClienteController(ClienteService clienteService)
         {
-            this.usuarioRegrasDeNegocio = usuarioService;
+            this.clienteRegrasDeNegocio = clienteService;
         }
 
         [HttpGet]
-        public String RetornarTexto()
+        public String RetornarrTexto()
         {
             return "Caio";
         }
 
         [Route("[action]")]
         [HttpGet]
-        public String ExemplodeDesubrota()
+        public String ExemplodeDeSubrota()
         {
             return "Caio2";
         }
 
         [HttpPost]
-        public String CadastrarUsuario(Usuario usuario)
+        public String CadastrarCliente(Cliente cliente)
         {
-            return usuarioRegrasDeNegocio.cadastrarNovoUsuario(usuario);
+            return clienteRegrasDeNegocio.cadastrarNovoCliente(cliente);
         }
        
        
