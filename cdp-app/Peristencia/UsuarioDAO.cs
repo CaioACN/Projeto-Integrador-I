@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace cdp_app.Peristencia
 {
-    public class ClienteDAO
+    public class UsuarioDAO
     {
         private List<Usuario> dados;
         
-        public ClienteDAO()
+        public UsuarioDAO()
         {
             dados = new List<Usuario>();
 

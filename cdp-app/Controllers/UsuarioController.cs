@@ -8,12 +8,12 @@ namespace cdp_app.Controllers
 
     [ApiController]
     [Route("[controller]")]
-    public class ClienteController : ControllerBase
+    public class UsuarioService : ControllerBase
     
     {
-        private ClienteService usuarioRegrasDeNegocio;
+        private Negocio.UsuarioService usuarioRegrasDeNegocio;
 
-        public ClienteController(ClienteService usuarioService)
+        public UsuarioService(Negocio.UsuarioService usuarioService)
         {
             this.usuarioRegrasDeNegocio = usuarioService;
         }

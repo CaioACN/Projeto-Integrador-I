@@ -25,15 +25,15 @@ namespace cdp_app.Peristencia
             Console.WriteLine(c.CodigoDoCliente);
         }
 
-        public Usuario buscarPorNome(string nome)
+        public Cliente buscarPorNome(string nome)
         {
-            Usuario x;
+            Cliente y;
             for (int i = 0; i < dadosCliente.Count; i++)
             {
-               x = dadosCliente.ElementAt(i);
-                if (x.Nome.Equals(nome))
+               y = dadosCliente.ElementAt(i);
+                if (y.Nome.Equals(nome))
                 {
-                    return x;
+                    return y;
                 }
 
             }

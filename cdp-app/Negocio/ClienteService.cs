@@ -17,9 +17,9 @@ namespace cdp_app.Negocio
            clienteDAO = new ClienteDAO();
         }        
 
-        public String cadastrarNovoCliente(Cliente Cliente)
+        public String cadastrarNovoCliente(Cliente cliente)
         {
-            Cliente resultado = clienteDAO.buscarPorNome(Cliente.Nome);
+            Cliente resultado = clienteDAO.buscarPorNome(cliente.Nome);
             if( resultado == null)
             {
                 clienteDAO.salvar(cliente);

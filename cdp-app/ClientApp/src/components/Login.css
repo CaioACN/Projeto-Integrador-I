@@ -10,7 +10,7 @@
 
 .login-logo img {
     display: flex;
-    align-items: left;
+    align-items:center;
     justify-content: left;
     width: 550px;
     height: 440px;
@@ -135,7 +135,7 @@
 
 .login-logo img {
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: left;
     width: 550px;
     height: 440px;
