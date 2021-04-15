@@ -56,7 +56,7 @@ export class CadastrarVeiculo extends Component {
                     </p>
                     <p>
                         <label for="numero">Percentual da Comissão</label>
-                        <input type="double" id="numero" onChange={this.changeHandler} />
+                        <input type="number" id="numero" onChange={this.changeHandler} />
                     </p>
 
                     <input type="submit" value="Cadastrar" />
