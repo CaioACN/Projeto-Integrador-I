@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-export class CadastroDeClientes extends Component {
-  static displayName = CadastroDeClientes.name;
+export class CadastrarClientes extends Component {
+  static displayName = CadastrarClientes.name;
   
 
     constructor(props) {
@@ -15,14 +15,14 @@ export class CadastroDeClientes extends Component {
         this.setState({ [id]: valor });
     }
 
-    salvarNovoUsuario = async (event) => {
+    salvarNovoCliente = async (event) => {
         event.preventDefault();
-        //chamar rest para cadastrar usuário
+        //chamar rest para cadastrar cliente
         let postData = JSON.stringify(this.state);
 
 
         try {
-            let response = await fetch('usuario', {
+            let response = await fetch('cliente', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
@@ -40,8 +40,8 @@ export class CadastroDeClientes extends Component {
     render() {
         return (
             <div>
-                <h1>Novo Usuário</h1>
-                <form onSubmit={this.salvarNovoUsuario}>
+                <h1>Novo Cliente</h1>
+                <form onSubmit={this.salvarNovoCliente}>
                     <p>
 
 

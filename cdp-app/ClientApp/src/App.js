@@ -6,6 +6,7 @@ import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { CadastrarUsuario } from './components/CadastrarUsuario';
 import { Login } from './components/Login';
+import { CadastrarClientes } from './components/CadastrarClientes';
 import './custom.css'
 
 export default class App extends Component {
@@ -20,6 +21,7 @@ export default class App extends Component {
                 <Route path='/counter' component={Counter} />
                 <Route path='/cadastrarusuario' component={CadastrarUsuario} />
                 <Route path='/fetch-data' component={FetchData} />
+                <Route path='/clientes' component={CadastrarClientes} />
 
             </Layout>
         );
