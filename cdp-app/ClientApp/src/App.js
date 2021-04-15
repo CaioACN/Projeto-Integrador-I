@@ -7,6 +7,7 @@ import { Counter } from './components/Counter';
 import { CadastrarUsuario } from './components/CadastrarUsuario';
 import { Login } from './components/Login';
 import { CadastrarClientes } from './components/CadastrarClientes';
+import { CadastrarVeiculo } from './components/CadastrarVeiculo';
 import './custom.css'
 
 export default class App extends Component {
@@ -22,6 +23,7 @@ export default class App extends Component {
                 <Route path='/cadastrarusuario' component={CadastrarUsuario} />
                 <Route path='/fetch-data' component={FetchData} />
                 <Route path='/clientes' component={CadastrarClientes} />
+                <Route path='/veiculos' component={CadastrarVeiculo} />
 
             </Layout>
         );
