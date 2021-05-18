@@ -161,11 +161,10 @@
 
     .login-rigth h4 {
         font-family: "Roboto Slab";        
-        font-weight: 300;
         margin-top: 40px;
-        font-size: 15px;
-        font-weight: 500;
-        color: #e1e1e6;
+        font-size: 17px;
+        font-weight: 1000;
+        color:white;
     }
 
 .login-loginInputEmail {
