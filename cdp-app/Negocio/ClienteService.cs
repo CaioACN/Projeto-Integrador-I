@@ -10,7 +10,7 @@ namespace cdp_app.Negocio
     public class ClienteService
     {
 
-        private ClienteDAO clienteDAO;
+        public ClienteDAO clienteDAO;
 
         public ClienteService()
         {
@@ -19,10 +19,10 @@ namespace cdp_app.Negocio
 
         public String cadastrarNovoCliente(Cliente cliente)
         {
-            Cliente resultado = clienteDAO.buscarPorNome(cliente.Nome);
+            var resultado = clienteDAO.Consultar(cliente.Nome);
             if( resultado == null)
             {
-                clienteDAO.salvar(cliente);
+                clienteDAO.Gravar(cliente);
 
                 return "Cadastro do cliente realizado com sucesso.";
             }

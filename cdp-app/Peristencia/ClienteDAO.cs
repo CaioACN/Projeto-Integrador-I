@@ -1,43 +1,46 @@
 ﻿using cdp_app.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace cdp_app.Peristencia
 {
-    public class ClienteDAO
+
+    public class ClienteDAO 
     {
-        private List<Cliente> dadosCliente;
-        
+
+        private static readonly ClienteDAO instancia = new ClienteDAO();
+
+        public object ConexaoBD { get; private set; }
+
         public ClienteDAO()
         {
-            dadosCliente = new List<Cliente>();
-
+        }
+        public static ClienteDAO GetInstance()
+        {
+            return instancia;
         }
 
-        public void salvar(Cliente c)
+        public List<nome_cliente> ExibirTodos()
         {
-            dadosCliente.Add(c);
-            Console.WriteLine(dadosCliente.Count);
-            Console.WriteLine(c.Agencia);
-            Console.WriteLine(c.Nome);
-            Console.WriteLine(c.CodigoDoCliente);
+            throw new NotImplementedException();
         }
 
-        public Cliente buscarPorNome(string nome)
+        public void Gravar(Cliente obj)
         {
-            Cliente y;
-            for (int i = 0; i < dadosCliente.Count; i++)
-            {
-               y = dadosCliente.ElementAt(i);
-                if (y.Nome.Equals(nome))
-                {
-                    return y;
-                }
+            throw new NotImplementedException();
+        }
 
-            }
-            return null;
+        public tb_cliente Consultar(string nome_cliente)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Gravar(nome_cliente obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }
