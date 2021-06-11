@@ -1,4 +1,5 @@
 ﻿using cdp_app.Model;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -28,19 +29,34 @@ namespace cdp_app.Peristencia
             throw new NotImplementedException();
         }
 
-        public void Gravar(Cliente obj)
-        {
-            throw new NotImplementedException();
-        }
+      
 
         public tb_cliente Consultar(string nome_cliente)
         {
             throw new NotImplementedException();
         }
 
-        public void Gravar(nome_cliente obj)
+        public void Gravar(Cliente ObjetoCliente)
         {
-            throw new NotImplementedException();
+            try
+            {
+                BancoDeDados banco = new BancoDeDados();
+                banco.Conectar();
+                String gravar = "INSERT INTO  TB_CLIENTE (CD_CLIENTE,NOME_CLIENTE) VALUES( @CD_CLIENTE,@NOME_CLIENTE);";
+
+                MySqlCommand objExecucao = new MySqlCommand(gravar,banco.ObjConexao);
+
+                objExecucao.Parameters.AddWithValue("@NOME_CLIENTE", ObjetoCliente.nome);
+                objExecucao.Parameters.AddWithValue("@CD_CLIENTE", ObjetoCliente.cd_cliente);
+
+                objExecucao.ExecuteNonQuery();
+                banco.Desconectar();
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine(error);
+            }
+
         }
     }
 }

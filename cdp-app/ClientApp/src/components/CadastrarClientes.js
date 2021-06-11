@@ -14,7 +14,7 @@ export class CadastrarClientes extends Component {
         let valor = event.target.value;
         this.setState({ [id]: valor });
     }
-
+ 
     salvarNovoCliente = async (event) => {
         event.preventDefault();
         //chamar rest para cadastrar cliente
@@ -57,7 +57,7 @@ export class CadastrarClientes extends Component {
                         <input type="text" id="senha" onChange={this.changeHandler} />
                     </p>
 
-                    <input type="submit" value="Cadastrar" />
+                    <input type="submit" value="Cadastrar"  />
 
                 </form>
 
