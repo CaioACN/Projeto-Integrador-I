@@ -42,30 +42,29 @@ export class CadastrarVeiculo extends Component {
             <div>
                 <h1>Novo Veículo</h1>
                 <form onSubmit={this.salvarNovoVeiculo}>
-                    <p>
-                        <label for="numero">Código do Veículo</label>
-                        <input type="number" id="numero" onChange={this.changeHandler} />
-                    </p>
-                    <p>
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" onChange={this.changeHandler} />
-                    </p>
-                    <p>
-                        <label for="numero">Código do Tipo do Veículo</label>
-                        <input type="number" id="numero" onChange={this.changeHandler} />
-                    </p>
-                    <p>
-                        <label for="numero">Percentual da Comissão</label>
-                        <input type="number" id="numero" onChange={this.changeHandler} />
-                    </p>
-
-                    <input type="submit" value="Cadastrar" />
-
-                </form>
-
-
+                    <table width="400px">
+                        <tr>
+                            <td align='right'><label for="numero">Código do Veículo:    </label></td>                        
+                            <td align='left'><input type="number" id="numero" onChange={this.changeHandler} /></td>
+                        </tr>
+                        <tr>
+                            <td align='right'><label for="nome">Nome:   </label></td>
+                            <td align='left'><input type="text" id="nome" onChange={this.changeHandler} /></td>
+                        </tr>
+                        <tr>
+                            <td align='right'><label for="numero">Código do Tipo do Veículo:    </label></td>
+                            <td align='left'><input type="number" id="numero" onChange={this.changeHandler} /></td>
+                        </tr>
+                        <tr>
+                            <td align='right'><label for="numero">Percentual da Comissão:    </label></td>
+                            <td align='left'><input type="number" id="numero" onChange={this.changeHandler} /></td>
+                        </tr>
+                        <tr>
+                            <td align='center'><input type="submit" value="Cadastrar"/></td>
+                        </tr>                   
+                    </table>
+               </form>
             </div>
         );
-
     }
 }

@@ -19,7 +19,7 @@ namespace cdp_app.Negocio
 
         public String cadastrarNovoCliente(Cliente cliente)
         {
-            var resultado = clienteDAO.Consultar(cliente.Nome);
+            var resultado = clienteDAO.Consultar(cliente.nome);
             if( resultado == null)
             {
                 clienteDAO.Gravar(cliente);

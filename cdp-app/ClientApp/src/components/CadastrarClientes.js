@@ -37,31 +37,30 @@ export class CadastrarClientes extends Component {
         }
     }
 
+    
     render() {
         return (
             <div>
                 <h1>Novo Cliente</h1>
                 <form onSubmit={this.salvarNovoCliente}>
-                    <p>
-
-
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" onChange={this.changeHandler} />
-                    </p>
-                    <p>
-                        <label for="email">E-mail</label>
-                        <input type="text" id="email" onChange={this.changeHandler} />
-                    </p>
-                    <p>
-                        <label for="senha">Senha</label>
-                        <input type="text" id="senha" onChange={this.changeHandler} />
-                    </p>
-
-                    <input type="submit" value="Cadastrar"  />
-
-                </form>
-
-
+                    <table width="50px">
+                        <tr>
+                            <td align='center'><label for="nome">Nome:</label></td>                        
+                            <td align='left'><input type="text" id="nome" onChange={this.changeHandler} /></td>
+                        </tr>
+                        <tr>
+                            <td align='center'><label for="email">E-mail: </label></td>
+                            <td align='left'><input type="text" id="email" onChange={this.changeHandler}/></td>
+                        </tr>
+                        <tr>
+                            <td align='center'><label for="senha">Senha: </label></td>
+                            <td align='left'><input type="text" id="senha" onChange={this.changeHandler} /></td>
+                        </tr>
+                        <tr>
+                            <td align='center'><input type="submit" value="Cadastrar"/></td>
+                        </tr>                   
+                   </table>
+               </form>
             </div>
         );
 

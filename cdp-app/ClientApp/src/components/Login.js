@@ -52,12 +52,12 @@ export class Login extends Component {
 
                     <button type="submit">
                         Entrar
-                </button>
+                    </button>
 
-                    <h4>Novo usuário</h4>
+                    
                     <a href="/cadastrarusuario">
-                        Cadastrar
-                </a>
+                    Novo Usuário
+                    </a>
 
                 </div>
             </div>
